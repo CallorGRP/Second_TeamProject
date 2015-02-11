@@ -1,86 +1,119 @@
 ﻿<!DOCTYPE html>
 <html lang="ko">
-    
-    <head>
-        <title>수강신청</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="http://bootswatch.com/cosmo/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <style type="text/css">
-        .table{
-            width:925px;
-            overflow: scroll;
-        }
-        </style>
-    </head>
-    
-    <body>
-<!-- ------------------------------------네비게이션--------------------------------------------------------- -->
-<!-- ------------------------------------네비게이션--------------------------------------------------------- -->
 
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span> 
-                    </button> <a class="navbar-brand" href="#">Home</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">학사일정</a></li>
-                        <li><a href="#">학교소개</a></li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                대학<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">공과대학</a></li>
-                                <li><a href="#">의과대학</a></li>
-                                <li><a href="#">경영대학</a></li>
-                                <li><a href="#">사범대학</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">학사관리</a></li>
-                        <li><a href="#">사이트맵</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#"><span class="glyphicon glyphicon-log-in"></span>&nbsp&nbsp&nbspLogin</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<head>
+    <title>수강신청</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://bootswatch.com/cosmo/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    .table {
+        width:925px;
+        overflow: scroll;
+    }
+    .sub{
+        background-color: rgb(245,245,245);
+           opacity: 0.5;
+        text-align: left;
+        padding: 5px;
+        padding-left: 30px;
+        font-size: 0.9em;
+    }
 
+    </style>
+</head>
 
-<!-- ------------------------------------네비게이션 끝--------------------------------------------------------- -->
-<!-- ------------------------------------네비게이션 끝--------------------------------------------------------- -->
+<body>
+    <!-- ------------------------------------네비게이션--------------------------------------------------------- -->
+    <!-- ------------------------------------네비게이션--------------------------------------------------------- -->
+    <nav class="navbar navbar-default">
         <div class="container">
-            <div class="row">
-<!-- ------------------------------------ASIDE--------------------------------------------------------- -->
-<!-- ------------------------------------ASIDE--------------------------------------------------------- -->
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <div class="list-group">    
-                        <a class="list-group-item active" href="#">내 강의실</a>
-                        <a class="list-group-item" href="#">수강신청</a>
-                        <a class="list-group-item" href="#">과목게시판</a>
-                        <a class="list-group-item" href="#">시간표</a>
-                        <a class="list-group-item" href="#">졸업사정조회</a>
-                        <a class="list-group-item" href="#">필수 과목 이수</a>
-                        <a class="list-group-item active" href="#">성적 조회</a>
-                        <a class="list-group-item" href="#">금학기 성적조회</a>
-                        <a class="list-group-item" href="#">학기별 성적조회</a>
-                        <a class="list-group-item active" href="#">증명서 발급</a>
-                        <a class="list-group-item" href="#">졸업 증명서</a>
-                        <a class="list-group-item" href="#">성적 증명서</a>
-                        <a class="list-group-item" href="#">재학 증명서</a>
-                        <a class="list-group-item" href="#">휴학 증명서</a>
-                        <a class="list-group-item active" href="#">개인정보 수정</a>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span> 
+               </button> <a class="navbar-brand" href="#">Home</a>
+
+           </div>
+           <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#">공지사항</a>
+                </li>
+                <li><a href="#">학사일정</a>
+                </li>
+                <li><a href="#">학교소개</a>
+                </li>
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    대학<span class="caret"></span></a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">공과대학</a>
+                        </li>
+                        <li><a href="#">의과대학</a>
+                        </li>
+                        <li><a href="#">경영대학</a>
+                        </li>
+                        <li><a href="#">사범대학</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">학사관리</a>
+                </li>
+                <li><a href="#" data-toggle="collapse" data-target="#sitemap">사이트맵</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li> <a href="#"><span class="glyphicon glyphicon-log-in"></span>&nbsp&nbsp&nbspLogin</a>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  <div id="sitemap" class="container collapse">
+
+  </div>
+<!-- ------------------------------------네비게이션 끝--------------------------------------------------------- -->
+<!-- ------------------------------------네비게이션 끝--------------------------------------------------------- -->
+<div class="container">
+    <div class="row">
+        <!-- ------------------------------------ASIDE--------------------------------------------------------- -->
+        <!-- ------------------------------------ASIDE--------------------------------------------------------- -->
+        <div class="col-sm-4 col-md-3 col-lg-2">
+            <div class="list-group"> <a class="list-group-item active"  data-toggle="collapse" data-target="#myClass" href="#"><span class="glyphicon glyphicon-pencil"></span>&nbsp&nbsp 내 강의실</a>
+               <div id="myClass" class="collapse">
+               <a class="list-group-item " href="#"  data-toggle="collapse" data-target="#subject">수강 신청</a>
+               <div class="collapse" id="subject">
+                    <a class="list-group-item sub" href="#">수강 신청 안내</a>
+                    <a class="list-group-item sub" href="#">수강 신청 하기</a>
+                    <a class="list-group-item sub" href="#">희망 수업</a>
+                </div>
+               <a class="list-group-item" href="#"  data-toggle="collapse" data-target="#subject2">과목 게시판</a>
+               <div class="collapse" id="subject2">
+                    <a class="list-group-item sub" href="#">수업 자료</a>
+                    <a class="list-group-item sub" href="#">과제 제출</a>
+                    <a class="list-group-item sub" href="#">질문&답변</a>
+                </div>
+               <a class="list-group-item" href="#">시간표</a>
+               <a class="list-group-item" href="#">졸업사정조회</a>
+               <a class="list-group-item" href="#">필수 과목 이수</a>
+               </div>
+               <a class="list-group-item active" href="#"  data-toggle="collapse" data-target="#score" ><span class="glyphicon glyphicon-list-alt"></span>&nbsp&nbsp 성적 조회</a>
+               <div id="score" class="collapse">
+               <a class="list-group-item" href="#">금학기 성적조회</a>
+               <a class="list-group-item" href="#">학기별 성적조회</a>
+                </div>
+               <a class="list-group-item active" href="#"  data-toggle="collapse" data-target="#cert" ><span class="glyphicon glyphicon-file"></span>&nbsp&nbsp 증명서 발급</a>
+               <div id="cert" class="collapse">
+               <a class="list-group-item" href="#">졸업 증명서</a>
+               <a class="list-group-item" href="#">성적 증명서</a>
+               <a class="list-group-item" href="#">재학 증명서</a>
+               <a class="list-group-item" href="#">휴학 증명서</a>
+           </div>
+               <a class="list-group-item active" href="#"><span class="glyphicon glyphicon-user"></span>&nbsp&nbsp 개인정보 수정</a>
 
                         <!-- <a class="list-group-item active" href="#">내 강의실</a>
                         <a class="list-group-item active" href="#">성적 조회</a>
@@ -88,220 +121,191 @@
                         <a class="list-group-item active" href="#">개인정보 수정</a>
 
                     -->
+                </div>
+            </div>
+            <!-- ------------------------------------ASIDE 끝--------------------------------------------------------- -->
+            <!-- ------------------------------------Section --------------------------------------------------------- -->
+            <div class="container col-sm-8 col-md-9 col-lg-10">
+                <div class="row panel-body ">
+                    <div class="form-group  col-sm-9 col-md-8 col-lg-6 navbar-right">
+                        <div class="input-group"> <span class="input-group-addon">수업번호</span>
+
+                            <input class="form-control" type="text"> <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">수강신청</button>
+                        </span>
+
                     </div>
                 </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-target="#search"> <strong>과목 조회</strong>&nbsp&nbsp<span class="glyphicon glyphicon-th-list"></span>
 
-<!-- ------------------------------------ASIDE 끝--------------------------------------------------------- -->
-<!-- ------------------------------------Section --------------------------------------------------------- -->
-
-                <div class="container col-sm-8 col-md-9 col-lg-10">
-                        <div class="row panel-body ">        
-                            <div class="form-group  col-sm-9 col-md-8 col-lg-6 navbar-right">
-                                <div class="input-group">
-                                <span class="input-group-addon">수업번호</span>
-                                <input class="form-control" type="text">
-                                <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">수강신청</button>
-                                </span>
-                                </div>
-                            </div>
+                </div>
+                <div class="panel-body collapse in" id="search">
+                    <form>
+                        <div class="form-group col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                            <label class="control-label" for="focusedInput">조직</label>
+                            <input class="form-control" id="focusedInput" type="text" value="대학(학부)">
                         </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                        <strong>과목 조회</strong>&nbsp&nbsp<span class="glyphicon glyphicon-th-list"></span>
+                        <div class="form-group col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                            <label class="control-label" for="focusedInput">년도</label>
+                            <input class="form-control" id="focusedInput" type="text" value="2015">
                         </div>
-                        <div class="panel-body">
-                            <form>
-                                <div class="form-group col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                                    <label class="control-label" for="focusedInput">조직</label>
-                                    <input class="form-control" id="focusedInput" type="text" value="대학(학부)">
-                                </div>
-                                <div class="form-group col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                                    <label class="control-label" for="focusedInput">년도</label>
-                                    <input class="form-control" id="focusedInput" type="text" value="2015">
-                                </div>
-                                <div class="form-group col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                                    <label class="control-label" for="focusedInput">학기</label>
-                                     <select class="form-control" id="select">
-                                      <option>1학기</option>
-                                      <option>여름학기</option>
-                                      <option>2학기</option>
-                                      <option>겨울학기</option>
-                                    </select>
-
-                                </div>
-                                <div class="form-group col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                                    <label class="control-label" for="focusedInput">학년</label>
-                                       <select class="form-control" id="select">
-                                          <option>1학년</option>
-                                          <option>2학년</option>
-                                          <option>3학년</option>
-                                          <option>4학년</option>
-                                        </select>
-                                </div>
-                                <div class="form-group col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                                    <label class="control-label" for="focusedInput">분류</label>
-                                       <select class="form-control" id="select">
-                                        <option>전체</option>
-                                        <option>전공필수</option>
-                                        <option>전공선택</option>
-                                        <option>교양필수</option>
-                                        <option>교양선택</option>
-                                        </select>
-
-                                </div>
-                              
-                                <div class="form-group col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                                    <label class="control-label" for="focusedInput">필수과목 확인</label>
-                                    <button type="button" class="btn btn-primary btn-block">조회</button>
-                                </div>
-
-
-                                <div class="form-group col-xs-12 col-sm-8 col-md-6 col-lg-4">
-                                    <label class="control-label" for="focusedInput">과목명</label>
-                                    <div class="input-group">
-                                        <input class="form-control" type="text">
-                                        <span class="input-group-btn">
-                                        <button class="btn btn-primary" type="submit">
-                                            <span class="glyphicon glyphicon-search"></span>
-                                        </button>
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div class="form-group col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                                    <label class="control-label" for="focusedInput">요일</label>
-                                    <input class="form-control" id="focusedInput" type="text" value="This is focused...">
-                                </div>
-                                <div class="form-group col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                                    <label class="control-label" for="focusedInput">수업시간</label>
-                                    <input class="form-control" id="focusedInput" type="text" value="This is focused...">
-                                </div>
-                                
-
-                               
-
-                                  <div class="form-group col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                                    <label class="control-label" for="focusedInput">이수제한</label>
-                                    <select class="form-control" id="select">
-                                        <option>전체</option>
-                                        <option>제한없음</option>
-                                        <option>전공제한</option>
-                                        <option>학년제한</option>
-                                        </select>
-                                </div>
-
-                                <div class="form-group col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                                    <label class="control-label" for="focusedInput">수업 조회</label>
-                                    <button type="button" class="btn btn-default btn-block">검색</button>
-                                </div>
-                            </form>
+                        <div class="form-group col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                            <label class="control-label" for="focusedInput">학기</label>
+                            <select class="form-control" id="select">
+                                <option>1학기</option>
+                                <option>여름학기</option>
+                                <option>2학기</option>
+                                <option>겨울학기</option>
+                            </select>
                         </div>
-                        
+                        <div class="form-group col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                            <label class="control-label" for="focusedInput">학년</label>
+                            <select class="form-control" id="select">
+                                <option>1학년</option>
+                                <option>2학년</option>
+                                <option>3학년</option>
+                                <option>4학년</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                            <label class="control-label" for="focusedInput">분류</label>
+                            <select class="form-control" id="select">
+                                <option>전체</option>
+                                <option>전공필수</option>
+                                <option>전공선택</option>
+                                <option>교양필수</option>
+                                <option>교양선택</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                            <label class="control-label" for="focusedInput">필수과목 확인</label>
+                            <button type="button" class="btn btn-primary btn-block">조회</button>
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-8 col-md-6 col-lg-4">
+                            <label class="control-label" for="focusedInput">과목명</label>
+                            <div class="input-group">
+                                <input class="form-control" type="text"> <span class="input-group-btn">
+                                <button class="btn btn-primary" type="submit">
+                                    <span class="glyphicon glyphicon-search"></span>
+
+                                </button>
+                            </span>
+                        </div>
                     </div>
-
-                <!-- ------------------------------------과목조회---------------------------------------->
-                    <div class="panel panel-default">
-                        <div class="panel-heading"><strong>과목 조회 결과</strong></div>
-                        <div class="panel-body table-responsive">
-
-
-                     
-                         <table class="table table-striped">
-                            <thead>
-                              <tr>
-                                <th>신청 / 희망신청</th>
-                                <th>과목명</th>
-                                <th>교수명</th>
-                                <th>수업번호</th>
-                                <th>정원</th>
-                                <th>학점</th>
-                                <th>강의실</th>
-                                <th>수업시간</th>
-                                <th>학년</th>
-                                <th>정보</th>
-
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td><button type="button" class="btn btn-success btn-xs">신청</button>
-                                <button type="button" class="btn btn-warning btn-xs">희망신청</button></td>
-                                <td>Theory of Relativity</td>
-                                <td>Albert Einstein</td>
-                                <td>A001122</td>
-                                <td>01/50</td>
-                                <td>3학점</td>
-                                <td>P202</td>
-                                <td>월 09:00<br>목 09:00</td>
-                                <td>4학년</td>
-                                <td><button type="button" class="btn btn-info btn-xs">상세</button></td>              
-                              </tr>
- 
-                              <tr>
-                                <td><button type="button" class="btn btn-success btn-xs">신청</button>
-                                <button type="button" class="btn btn-warning btn-xs">희망신청</button></td>
-                                <td>중국문화의 이해</td>
-                                <td>원종성</td>
-                                <td>B088822</td>
-                                <td>30/45</td>
-                                <td>2학점</td>
-                                <td>A105</td>
-                                <td>수 15:00</td>
-                                <td>제한없음</td>
-                                <td><button type="button" class="btn btn-info btn-xs">상세</button></td>              
-                              </tr>
-                              <tr>
-                                <td><button type="button" class="btn btn-success btn-xs">신청</button>
-                                <button type="button" class="btn btn-warning btn-xs">희망신청</button></td>
-                                <td>Theory of Relativity</td>
-                                <td>Albert Einstein</td>
-                                <td>A001122</td>
-                                <td>01/50</td>
-                                <td>3학점</td>
-                                <td>P202</td>
-                                <td>월 09:00<br>목 09:00</td>
-                                <td>4학년</td>
-                                <td><button type="button" class="btn btn-info btn-xs">상세</button></td>              
-                              </tr>
- 
-                              <tr>
-                                <td><button type="button" class="btn btn-success btn-xs">신청</button>
-                                <button type="button" class="btn btn-warning btn-xs">희망신청</button></td>
-                                <td>중국문화의 이해</td>
-                                <td>원종성</td>
-                                <td>B088822</td>
-                                <td>30/45</td>
-                                <td>2학점</td>
-                                <td>A105</td>
-                                <td>수 15:00</td>
-                                <td>제한없음</td>
-                                <td><button type="button" class="btn btn-info btn-xs">상세</button></td>              
-                              </tr>
+                    <div class="form-group col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                        <label class="control-label" for="focusedInput">요일</label>
+                        <select class="form-control" id="select">
+                            <option>전체</option>
+                            <option>월요일</option>
+                            <option>화요일</option>
+                            <option>수요일</option>
+                            <option>목요일</option>
+                            <option>금요일</option>
+                            <option>토요일</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                        <label class="control-label" for="focusedInput">수업시간</label>
+                        <select class="form-control" id="select">
+                            <option>AM 09:00</option>
+                            <option>09:30</option>
+                            <option>10:00</option>
+                            <option>10:30</option>
+                            <option>11:00</option>
+                            <option>11:30</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                        <label class="control-label" for="focusedInput">이수제한</label>
+                        <select class="form-control" id="select">
+                            <option>전체</option>
+                            <option>제한없음</option>
+                            <option>전공제한</option>
+                            <option>학년제한</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                        <label class="control-label" for="focusedInput">수업 조회</label>
+                        <button type="button" class="btn btn-default btn-block">검색</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- ------------------------------------과목조회---------------------------------------->
+        <div class="panel panel-default">
+            <div class="panel-heading"><strong>과목 조회 결과</strong>
+            </div>
+            <div class="panel-body table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>신청 / 희망신청</th>
+                            <th>과목명</th>
+                            <th>교수명</th>
+                            <th>수업번호</th>
+                            <th>정원</th>
+                            <th>학점</th>
+                            <th>수업시간</th>
+                            <th>강의실</th>
+                            <th>학년</th>
+                            <th>정보</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-success btn-xs">신청</button>
+                                <button type="button" class="btn btn-warning btn-xs">희망신청</button>
+                            </td>
+                            <td>Theory of Relativity</td>
+                            <td>Albert Einstein</td>
+                            <td>A001122</td>
+                            <td>01/50</td>
+                            <td>3학점</td>
+                            <td>월 09:00
+                                <br>목 09:00</td>
+                                <td>P202
+                                    <br>T501</td>
+                                    <td>4학년</td>
+                                    <td>
+                                        <button type="button" class="btn btn-info btn-xs">상세</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button type="button" class="btn btn-success btn-xs">신청</button>
+                                        <button type="button" class="btn btn-warning btn-xs">희망신청</button>
+                                    </td>
+                                    <td>중국문화의 이해</td>
+                                    <td>원종성</td>
+                                    <td>B088822</td>
+                                    <td>30/45</td>
+                                    <td>2학점</td>
+                                    <td>수 15:00</td>
+                                    <td>A105</td>
+                                    <td>제한없음</td>
+                                    <td>
+                                        <button type="button" class="btn btn-info btn-xs">상세</button>
+                                    </td>
+                                </tr>
                             </tbody>
-                          </table>
-                          <div class="row">
-                            <div class="col-xs-0 col-sm-2 col-md-3 col-lg-4"></div>
-                            <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4">
-                                    <ul class="pagination">
-                                      <li><a href="#">First</a></li>
-                                      <li><a href="#">Prev</a></li>
-                                      <li><a href="#">Next</a></li>
-                                      <li><a href="#">Last</a></li>
-                                    </ul> 
-                            </div>
-                            <div class="col-xs-0 col-sm-2 col-md-3 col-lg-4"></div>
-                            
-
-                                 
-
-                        </div>
-
+                        </table>
+                        <ul class="pagination navbar-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-backward"></span></a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+                            <li><a href="#"><span class="glyphicon "><strong>5</strong></span></a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-forward"></span></a></li>
+                        </ul>
                     </div>
-
                 </div>
             </div>
         </div>
-    </body>
-
+    </div>
+    <div class="container">
+    <p class="navbar-right">Copyright 2015 Seoul National University All Rights Reserved </p>    
+    </div>
+</body>
 </html>
