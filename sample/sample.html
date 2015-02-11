@@ -22,6 +22,12 @@
         padding-left: 30px;
         font-size: 0.9em;
     }
+    .nav li{
+        font-size: 1.3em;
+    }
+    .container-fluid {
+        max-width:1500px;    
+    }
 
     </style>
 </head>
@@ -30,7 +36,7 @@
     <!-- ------------------------------------네비게이션--------------------------------------------------------- -->
     <!-- ------------------------------------네비게이션--------------------------------------------------------- -->
     <nav class="navbar navbar-default">
-        <div class="container">
+        <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span>
                    <span class="icon-bar"></span>
@@ -62,8 +68,7 @@
                 </li>
                 <li><a href="#">학사관리</a>
                 </li>
-                <li><a href="#" data-toggle="collapse" data-target="#sitemap">사이트맵</a>
-                </li>
+<!--                    <li><a href="#" data-toggle="collapse" data-target="#sitemap">사이트맵</a>                </li> -->
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li> <a href="#"><span class="glyphicon glyphicon-log-in"></span>&nbsp&nbsp&nbspLogin</a>
@@ -73,26 +78,26 @@
         </div>
     </div>
 </nav>
-  <div id="sitemap" class="container collapse">
+  <div id="sitemap" class="container-fluid collapse">
 
   </div>
 <!-- ------------------------------------네비게이션 끝--------------------------------------------------------- -->
 <!-- ------------------------------------네비게이션 끝--------------------------------------------------------- -->
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <!-- ------------------------------------ASIDE--------------------------------------------------------- -->
         <!-- ------------------------------------ASIDE--------------------------------------------------------- -->
         <div class="col-sm-4 col-md-3 col-lg-2">
-            <div class="list-group"> <a class="list-group-item active"  data-toggle="collapse" data-target="#myClass" href="#"><span class="glyphicon glyphicon-pencil"></span>&nbsp&nbsp 내 강의실</a>
-               <div id="myClass" class="collapse">
+            <div class="list-group" > <a class="list-group-item active"  data-toggle="collapse" data-target="#myClass" href="#"><span class="glyphicon glyphicon-pencil"></span>&nbsp&nbsp 내 강의실</a>
+               <div id="myClass" class="collapse in">
                <a class="list-group-item " href="#"  data-toggle="collapse" data-target="#subject">수강 신청</a>
-               <div class="collapse" id="subject">
+               <div class="collapse in" id="subject">
                     <a class="list-group-item sub" href="#">수강 신청 안내</a>
                     <a class="list-group-item sub" href="#">수강 신청 하기</a>
                     <a class="list-group-item sub" href="#">희망 수업</a>
                 </div>
                <a class="list-group-item" href="#"  data-toggle="collapse" data-target="#subject2">과목 게시판</a>
-               <div class="collapse" id="subject2">
+               <div class="collapse in" id="subject2">
                     <a class="list-group-item sub" href="#">수업 자료</a>
                     <a class="list-group-item sub" href="#">과제 제출</a>
                     <a class="list-group-item sub" href="#">질문&답변</a>
@@ -102,7 +107,7 @@
                <a class="list-group-item" href="#">필수 과목 이수</a>
                </div>
                <a class="list-group-item active" href="#"  data-toggle="collapse" data-target="#score" ><span class="glyphicon glyphicon-list-alt"></span>&nbsp&nbsp 성적 조회</a>
-               <div id="score" class="collapse">
+               <div id="score" class="collapse in">
                <a class="list-group-item" href="#">금학기 성적조회</a>
                <a class="list-group-item" href="#">학기별 성적조회</a>
                 </div>
@@ -125,7 +130,7 @@
             </div>
             <!-- ------------------------------------ASIDE 끝--------------------------------------------------------- -->
             <!-- ------------------------------------Section --------------------------------------------------------- -->
-            <div class="container col-sm-8 col-md-9 col-lg-10">
+            <div class="container-fluid col-sm-8 col-md-9 col-lg-10">
                 <div class="row panel-body ">
                     <div class="form-group  col-sm-9 col-md-8 col-lg-6 navbar-right">
                         <div class="input-group"> <span class="input-group-addon">수업번호</span>
@@ -304,7 +309,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
     <p class="navbar-right">Copyright 2015 Seoul National University All Rights Reserved </p>    
     </div>
 </body>
