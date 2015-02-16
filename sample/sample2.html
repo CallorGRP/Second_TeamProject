@@ -2,13 +2,11 @@
 <html lang="ko">
 
 <head>
-<<<<<<< HEAD
   <title>메인페이지</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="http://bootswatch.com/cosmo/bootstrap.min.css">
-
+  <!--<link rel="stylesheet" href="http://bootswatch.com/cosmo/bootstrap.min.css">-->
   <style type="text/css">
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 1400px;
@@ -21,6 +19,7 @@
   }
   .container-fluid {
     max-width:1400px;
+
   }
   .cal-text {
     font-weight: 700;
@@ -31,31 +30,111 @@
     border: 2px solid red;
     text-align: center;
   }
-  .event_border{
+  .event_border {
     border-top:1px solid #e0e0e0;
-
   }
-  .jumbotron{
+  .jumbotron {
     border-left: 0;
   }
   body{
     margin-top: 50px;
   }
-  .navbar{
+  .navbar {
     border: 0;
   }
-  .second{
+  .second {
     padding-top: 10px;
+    border-radius: 0;
   }
-  .border_side{
-    border-left: 1px solid #333;
+  .border_side {
     font-size: 1.2em;
   }
-  .bg_gray{
-    background-color: #eee;
+  .bg_gray {
+    background-color: #e5ded9;
   }
 
-  </style>
+  .navbar-default{
+    background-color: #002147;
+  }
+
+  li:hover{
+    background-color: #00142b;
+    text-decoration: none;
+  }
+  .btn-lg{
+    border-radius: 0;
+    font-weight: bolder;
+    font-size: 1.8em;
+
+  }
+  .open > .dropdown-toggle.btn-success {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+  }
+  .navbar-default .navbar-nav > li > a {
+    color: #fff;
+  }
+  .navbar-default .navbar-nav > li > a:hover{
+    color: #fff;
+    background-color: #3277ae;
+  }
+  .navbar-default .navbar-nav > li > a:focus {
+
+    background-color: transparent;
+  }
+
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #red;
+  }
+  .navbar-default .navbar-nav > .disabled > a,
+  .navbar-default .navbar-nav > .disabled > a:hover,
+  .navbar-default .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: #ddd;
+  }
+  .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus {
+    background-color: #ddd;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #888;
+  }
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+  }
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #3277ae;
+  }
+  .white_bold{
+    color: white;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+  .bt_blue{
+   background-color: #002147;
+   color: white;
+ }
+ .event_border2{
+  border-top: 1px solid #ccc; 
+}
+
+
+</style>
 </head>
 
 <body>
@@ -63,102 +142,80 @@
   <!-- ------------------------------------네비게이션--------------------------------------------------------- -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
-      <div class="navbar-header">
+      <div class="navbar-header ">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span>
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
-       </button> <a class="navbar-brand" href="#">Home</a>
-
+       </button> <a class="navbar-brand btn-md" href="#"><span class="white_bold">Home</span></a>
      </div>
      <div class="collapse navbar-collapse" id="myNavbar">
-
       <ul class="nav navbar-nav navbar-right">
-
-
-        <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-          대학<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">공과대학</a></li>
-            <li><a href="#">의과대학</a></li>
-            <li><a href="#">경영대학</a></li>
-            <li><a href="#">사범대학</a></li>
-          </ul>
-        </li>
+        <li> &nbsp </li>
+        
+        <li><a href="#">대학</a></li>
         <li><a href="#">Site Map</a></li>
-        <form class="navbar-form navbar-left" role="search">
-          <div class="form-group">
-            <input class="form-control" type="text" placeholder="Search">
-          </div>
-          <button class="btn btn-default" type="submit">
-            <span class="glyphicon glyphicon-search"></span>
-          </button>
-        </form>
-        <li> <a href="#"><span class="glyphicon glyphicon-log-in"></span>&nbsp&nbsp&nbspLogin</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>&nbsp&nbsp&nbspLogin</a></li>
+        <li> &nbsp </li>
+        <li> &nbsp </li>
+        <li> &nbsp </li>
       </ul>
     </div>
   </nav>
-  <nav class="navbar navbar-default second">
+
+  <div class="navbar navbar-default second">
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12 col-sm-2 col-lg-2 hidden-md hidden-sm">
-
-
-         <img src="lg.png">
-
-       </div>
-       <div class="col-xs-4 col-sm-2 col-lg-2 visible-md visible-sm ">
-
-         <img src="md.png">
-
-
-       </div>
-       <div class="col-xs-12 col-sm-10 col-lg-9">
-        <div class="row">  
-          <div class="btn-group col-sm-3 col-xs-6 row">
-            <a class="btn btn-default col-xs-9  border_side" href="#">학교소개</a>
-            <a class="btn btn-default col-xs-3 dropdown-toggle" aria-expanded="false" href="#" data-toggle="dropdown"><span class="caret"></span></a>
-            <ul class="dropdown-menu dropdown-menu-right">
-              <li><a href="#">요약</a></li>
-              <li><a href="#">조직</a></li>
-              <li><a href="#">역사</a></li>
-              <li><a href="#">방문안내</a></li>
-              <li><a href="#">직원채용</a></li>
-            </ul>
-          </div>
-          <div class="btn-group col-sm-3  col-xs-6 row">
-            <a class="btn btn-default col-xs-9  border_side" href="#">입학안내</a>
-            <a class="btn btn-default col-xs-3 dropdown-toggle" aria-expanded="false" href="#" data-toggle="dropdown"><span class="caret"></span></a>
-            <ul class="dropdown-menu dropdown-menu-right">
-              <li><a href="#">대학</a></li>
-              <li><a href="#">대학원</a></li>
-              <li><a href="#">평생 교육원</a></li>
-              <li><a href="#">재학생</a></li>
-            </ul>
-          </div>
-          <div class="btn-group col-sm-3  col-xs-6 row">
-            <a class="btn btn-default col-xs-9  border_side" href="#">연구활동</a>
-            <a class="btn btn-default col-xs-3 dropdown-toggle" aria-expanded="false" href="#" data-toggle="dropdown"><span class="caret"></span></a>
-            <ul class="dropdown-menu dropdown-menu-right">
-              <li><a href="#">주요연구</a></li>
-              <li><a href="#">최신소식</a></li>
-              <li><a href="#">연구지원</a></li>
-            </ul>
-          </div>
-          <div class="btn-group col-sm-3  col-xs-6 row">
-            <a class="btn btn-default col-xs-9  border_side" href="#">학교소식</a>
-            <a class="btn btn-default col-xs-3  dropdown-toggle" aria-expanded="false" href="#" data-toggle="dropdown"><span class="caret"></span></a>
-            <ul class="dropdown-menu dropdown-menu-right">
-              <li><a href="#">뉴스</a></li>
-              <li><a href="#">이벤트</a></li>
-              <li><a href="#">학사일정</a></li>
-              
-            </ul>
-          </div>
+          LOGO - except MD
         </div>
+        <div class="col-xs-4 col-sm-2 col-lg-2 visible-md visible-sm ">
+          LOGO - MD
+        </div>
+        <div class="col-xs-12 col-sm-10 col-lg-9">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle btn-lg" data-toggle="dropdown" role="hover" aria-expanded="false">학교소개 <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">요약</a></li> 
+                <li><a href="#">조직</a></li> 
+                <li><a href="#">역사</a></li> 
+                <li><a href="#">방문안내</a></li> 
+                <li><a href="#">직원채용</a></li> 
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle btn-lg" data-toggle="dropdown" role="button" aria-expanded="false">입학안내 <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+               <li><a href="#">대학</a></li> 
+               <li><a href="#">대학원</a></li> 
+               <li><a href="#">평생 교육원</a></li> 
+               <li><a href="#">재학생</a></li> 
+             </ul>
+           </li>
+
+           <li class="dropdown">
+            <a href="#" class="dropdown-toggle btn-lg" data-toggle="dropdown" role="button" aria-expanded="false">연구활동 <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">주요연구</a></li> 
+              <li><a href="#">최신소식</a></li> 
+              <li><a href="#">연구지원</a></li> 
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle btn-lg" data-toggle="dropdown" role="button" aria-expanded="false">학교소식<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">뉴스</a></li> 
+              <li><a href="#">이벤트</a></li> 
+              <li><a href="#">학사일정</a></li> 
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
-</nav>
+</div>
 <!-- ------------------------------------ carousel --------------------------------------------------------- -->
 <div class="container-fluid">
   <br>
@@ -204,7 +261,7 @@
    <p>Beatiful flowers in Kolymbari, Crete.</p>
  </div>
 </div>
-</div>
+
 <!-- Left and right controls -->
 <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
   <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -218,6 +275,8 @@
 
 </div>
 </div>
+</div>
+
 <!-- ------------------------------------네비게이션 끝--------------------------------------------------------- -->
 <div class="container-fluid">
   <div class="row">
@@ -241,7 +300,6 @@
  <p>Lorem Ipsum</p>
 </div>
 <div class="col-sm-6 col-lg-3 ">
-
  <h2><b>&nbsp</b></h2>
 
  <img src="http://lorempixel.com/output/nightlife-q-c-640-480-9.jpg" width="100%">
@@ -251,6 +309,7 @@
 </div>
 <div class="col-sm-6 col-lg-3">
  <h2><b>EVENTS &nbsp</b><span><small class="text-primary"><a href="">All Events</a></small></span></h2>
+
  <div class="event_border">
    <h3><b> Lorem Ipsum </b><br>
      Lorem Ipsum is simply dummy<br>
@@ -262,7 +321,7 @@
         <div class="event_border">
          <h3><b> Lorem Ipsum </b><br>
           Lorem Ipsum is simply dummy<br>
-          <small>2015.02.18</small> </b> </div><hr>
+          <small>2015.02.18</small> </b> </div>
         </div>
       </div>
     </div>
@@ -270,14 +329,16 @@
 </div>
 
 
-
-<!-- ------------------------------------네비게이션 끝--------------------------------------------------------- --><div class="container-fluid bg_gray">
+<hr>
+<!-- ------------------------------------네비게이션 끝--------------------------------------------------------- -->
+<div class="container-fluid bg_gray">
   <div class="row">
     <div class="col-xs-12">
-     <h2><b>Research &nbsp</b><span><small class="text-primary"><a href="">All Research</a></small></span></h2>
-     </div>
+      <br>
+      <h2><b>RESEARCH &nbsp</b><span><small class="text-primary"><a href="">All Research</a></small></span></h2>
+    </div>
     <div class="col-sm-6 col-lg-3">
-    
+
 
      <div>
       <img src="http://lorempixel.com/output/nightlife-q-c-640-480-9.jpg" width="100%">
@@ -285,49 +346,239 @@
 
       <p>Lorem Ipsum</p>
     </div>
-  </a>
+
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <img src="http://lorempixel.com/output/nightlife-q-c-640-480-9.jpg" width="100%">
+    <h3><b>Lorem Ipsum is simply dummy</b></h3>
+
+    <p>Lorem Ipsum</p>
+  </div>
+  <div class="col-sm-6 col-lg-3 ">
+    <img src="http://lorempixel.com/output/nightlife-q-c-640-480-9.jpg" width="100%">
+    <h3><b>Lorem Ipsum is simply dummy</b></h3>
+
+    <p>Lorem Ipsum</p>
+  </div>
+  <div class="col-sm-6 col-lg-3 ">
+    <img src="http://lorempixel.com/output/nightlife-q-c-640-480-9.jpg" width="100%">
+    <h3><b>Lorem Ipsum is simply dummy</b></h3>
+
+    <p>Lorem Ipsum</p>
+  </div>
+</div>
+</div>
+<!-- ------------------------------------네비게이션 끝--------------------------------------------------------- -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12">
+      <br>
+      <h2><b>STUDY&nbsp</b><span><small class="text-primary"><a href="">Notice</a></small></span></h2>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+
+
+     <div>
+      <img src="http://lorempixel.com/output/nightlife-q-c-640-480-9.jpg" width="100%">
+      <h3><b>대학</b></h3>
+
+      <p>Lorem Ipsum</p>
+    </div>
+
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <img src="http://lorempixel.com/output/nightlife-q-c-640-480-9.jpg" width="100%">
+    <h3><b>대학원</b></h3>
+
+    <p>Lorem Ipsum</p>
+  </div>
+  <div class="col-sm-6 col-lg-3 ">
+    <img src="http://lorempixel.com/output/nightlife-q-c-640-480-9.jpg" width="100%">
+    <h3><b>평생교육원</b></h3>
+
+    <p>Lorem Ipsum</p>
+  </div>
+  <div class="col-sm-6 col-lg-3 ">
+    <img src="http://lorempixel.com/output/nightlife-q-c-640-480-9.jpg" width="100%">
+    <h3><b>재학생</b></h3>
+
+    <p>Lorem Ipsum</p>
+  </div>
+</div>
+</div>
+
+<!-- ------------------------------------네비게이션 끝--------------------------------------------------------- -->
+<div class="container-fluid bt_blue">
+  <br><br><br><br><br><br>
+
+</div>
+<!-- ------------------------------------네비게이션 끝--------------------------------------------------------- -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6 col-lg-3">
+     <h2><b>NEWS &nbsp</b><span><small class="text-primary"><a href="">All News</a></small></span></h2>
+
+     <div>
+      <img src="http://lorempixel.com/output/nightlife-q-c-640-480-9.jpg" width="100%">
+      <h3><b>Lorem Ipsum is simply dummy</b></h3>
+
+      <p>Lorem Ipsum</p>
+    </div>
+
+    <div>
+      <img src="http://lorempixel.com/output/nightlife-q-c-640-480-9.jpg" width="100%">
+      <h3><b>Lorem Ipsum is simply dummy</b></h3>
+
+      <p>Lorem Ipsum</p>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div> <h2>&nbsp</h2>
+
+     <img src="http://lorempixel.com/output/nightlife-q-c-640-480-9.jpg" width="100%">
+     <h3><b>Lorem Ipsum is simply dummy</b></h3>
+
+     <p>Lorem Ipsum</p>
+   </div>
+   <div>
+    <img src="http://lorempixel.com/output/nightlife-q-c-640-480-9.jpg" width="100%">
+    <h3><b>Lorem Ipsum is simply dummy</b></h3>
+
+    <p>Lorem Ipsum</p>
+  </div>
+
+
+
+</div>
+<div class="col-sm-6 col-lg-3 ">
+ <div> <h2><b>&nbsp</b></h2>
+
+   <img src="http://lorempixel.com/output/nightlife-q-c-640-480-9.jpg" width="100%">
+   <h3><b>Lorem Ipsum is simply dummy</b></h3>
+
+   <p>Lorem Ipsum</p>
+ </div>
+
+ <div>
+  <img src="http://lorempixel.com/output/nightlife-q-c-640-480-9.jpg" width="100%">
+  <h3><b>Lorem Ipsum is simply dummy</b></h3>
+
+  <p>Lorem Ipsum</p>
+</div>
 </div>
 <div class="col-sm-6 col-lg-3">
+ <div><h2><b>EVENTS &nbsp</b><span><small class="text-primary"><a href="">All Events</a></small></span></h2>
 
+   <div class="event_border">
+     <h3><b> Lorem Ipsum </b><br>
+       Lorem Ipsum is simply dummy<br>
+       <small>2015.02.18</small> </b></div>
+       <div class="event_border">
+         <h3><b> Lorem Ipsum </b><br>
+          Lorem Ipsum is simply dummy<br>
+          <small>2015.02.18</small> </b> </div>
+          <div class="event_border">
+           <h3><b> Lorem Ipsum </b><br>
+            Lorem Ipsum is simply dummy<br>
+            <small>2015.02.18</small> </b> </div>
+            <div class="event_border">
+             <h3><b> Lorem Ipsum </b><br>
+              Lorem Ipsum is simply dummy<br>
+              <small>2015.02.18</small> </b> </div>
+              <div class="event_border">
+               <h3><b> Lorem Ipsum </b><br>
+                Lorem Ipsum is simply dummy<br>
+                <small>2015.02.18</small> </b> </div>
+                <div class="event_border">
 
- <img src="http://lorempixel.com/output/nightlife-q-c-640-480-9.jpg" width="100%">
- <h3><b>Lorem Ipsum is simply dummy</b></h3>
-
- <p>Lorem Ipsum</p>
-</div>
-<div class="col-sm-6 col-lg-3 ">
-
-
-
- <img src="http://lorempixel.com/output/nightlife-q-c-640-480-9.jpg" width="100%">
- <h3><b>Lorem Ipsum is simply dummy</b></h3>
-
- <p>Lorem Ipsum</p>
-</div>
-
-<div class="col-sm-6 col-lg-3 ">
-
-
-
- <img src="http://lorempixel.com/output/nightlife-q-c-640-480-9.jpg" width="100%">
- <h3><b>Lorem Ipsum is simply dummy</b></h3>
-
- <p>Lorem Ipsum</p>
-</div>
-</div>
-
-        <!-- ------------------------------------네비게이션 끝--------------------------------------------------------- -->
-        <div class="container-fluid">
-
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+
+    </div>
+    <div class="container-fluid bt_blue">
+      <br><br><br><br><br><br>
+
+    </div>
 
 
 
-        <!-- ------------------------------------네비게이션 끝--------------------------------------------------------- -->
-        <div class="container-fluid">
-          <p class="navbar-right">Copyright 2015 Seoul National University All Rights Reserved </p>    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-lg-8">
+         <h2><b>NEWS &nbsp</b><span><small class="text-primary"><a href="">All News</a></small></span></h2>
+
+         <div>
+          <img src="http://lorempixel.com/output/nightlife-q-c-640-480-9.jpg" width="100%">
+          <h3><b>Lorem Ipsum is simply dummy</b></h3>
+
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
-      </body>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-      </html>
+      </div>
+
+
+      <div class="col-sm-6 col-lg-4 bg_gray">
+       <div><h2><b>EVENTS &nbsp</b><span><small class="text-primary"><a href="">All Events</a></small></span></h2>
+
+         <div class="event_border2 row">
+            <div class="col-xs-4 ">
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+            <div class="col-xs-8">
+            <h3><b> Lorem Ipsum </b><br>Lorem Ipsum is simply dummy<br><small>2015.02.18</small></h3>
+          </div>
+           
+         </div>
+         <div class="event_border2 ">
+           <h3><b> Lorem Ipsum </b><br>Lorem Ipsum is simply dummy<br><small>2015.02.18</small></h3>
+         </div>
+         <div class="event_border2 ">
+           <h3><b> Lorem Ipsum </b><br>Lorem Ipsum is simply dummy<br><small>2015.02.18</small></h3>
+         </div>
+         <div class="event_border2 ">
+           <h3><b> Lorem Ipsum </b><br>Lorem Ipsum is simply dummy<br><small>2015.02.18</small></h3>
+         </div>
+         <div class="event_border2 ">
+           <h3><b> Lorem Ipsum </b><br>Lorem Ipsum is simply dummy<br><small>2015.02.18</small></h3>
+         </div>
+         <div class="event_border2 ">
+           <h3><b> Lorem Ipsum </b><br>Lorem Ipsum is simply dummy<br><small>2015.02.18</small></h3>
+         </div>
+         <div class="event_border2 ">
+           <h3><b> Lorem Ipsum </b><br>Lorem Ipsum is simply dummy<br><small>2015.02.18</small></h3>
+         </div>
+         <div class="event_border2 ">
+           <h3><b> Lorem Ipsum </b><br>Lorem Ipsum is simply dummy<br><small>2015.02.18</small></h3>
+         </div>
+
+       </div>
+     </div>
+   </div>
+   <div class="container-fluid bt_blue">
+    <br><br><br><br><br><br>
+
+  </div>
+
+
+
+
+  <div class="container-fluid bt_blue">
+    <p class="navbar-right">Copyright 2015 Seoul National University All Rights Reserved</p>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</html>
