@@ -152,15 +152,100 @@
       <ul class="nav navbar-nav navbar-right">
         <li> &nbsp </li>
         
-        <li><a href="#">대학</a></li>
-        <li><a href="#">Site Map</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>&nbsp&nbsp&nbspLogin</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal1">대학</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal2">Site Map</a></li>
+        <li><a href="#myModal3" data-toggle="modal" ><span class="glyphicon glyphicon-log-in"></span>&nbsp&nbsp&nbspLogin</a></li>
         <li> &nbsp </li>
         <li> &nbsp </li>
         <li> &nbsp </li>
       </ul>
     </div>
   </nav>
+
+
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+            <div class="well">
+                          <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+                              <div class="form-group">
+                                  <label for="username" class="control-label">Username</label>
+                                  <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
+                                  <span class="help-block"></span>
+                              </div>
+                              <div class="form-group">
+                                  <label for="password" class="control-label">Password</label>
+                                  <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+                                  <span class="help-block"></span>
+                              </div>
+                              <div id="loginErrorMsg" class="alert alert-error hide">Wrong username og password</div>
+                              <div class="checkbox">
+                                  <label>
+                                      <input type="checkbox" name="remember" id="remember"> Remember login
+                                  </label>
+                                  <p class="help-block">(if this is a private computer)</p>
+                              </div>
+                              <button type="submit" class="btn btn-success btn-block">Login</button>
+                              <a href="/forgot/" class="btn btn-default btn-block">Help to login</a>
+                          </form>
+                      </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 
   <div class="navbar navbar-default second">
     <div class="container-fluid">
@@ -172,9 +257,13 @@
           LOGO - MD
         </div>
         <div class="col-xs-12 col-sm-10 col-lg-9">
+
+
+
+
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle btn-lg" data-toggle="dropdown" role="hover" aria-expanded="false">학교소개 <span class="caret"></span></a>
+              <a class="dropdown-toggle btn-lg" data-toggle="dropdown" role="hover" aria-expanded="false">학교소개 <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="#">요약</a></li> 
                 <li><a href="#">조직</a></li> 
@@ -185,8 +274,9 @@
             </li>
 
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle btn-lg" data-toggle="dropdown" role="button" aria-expanded="false">입학안내 <span class="caret"></span></a>
+              <a class="dropdown-toggle btn-lg" data-toggle="dropdown" role="button" aria-expanded="false">입학안내 <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
+              <li><a href="#">소개</a></li> 
                <li><a href="#">대학</a></li> 
                <li><a href="#">대학원</a></li> 
                <li><a href="#">평생 교육원</a></li> 
@@ -195,8 +285,9 @@
            </li>
 
            <li class="dropdown">
-            <a href="#" class="dropdown-toggle btn-lg" data-toggle="dropdown" role="button" aria-expanded="false">연구활동 <span class="caret"></span></a>
+            <a class="dropdown-toggle btn-lg" data-toggle="dropdown" role="button" aria-expanded="false">연구활동 <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
+              <li><a href="#">연구분야</a></li> 
               <li><a href="#">주요연구</a></li> 
               <li><a href="#">최신소식</a></li> 
               <li><a href="#">연구지원</a></li> 
@@ -204,8 +295,9 @@
           </li>
 
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle btn-lg" data-toggle="dropdown" role="button" aria-expanded="false">학교소식<span class="caret"></span></a>
+            <a class="dropdown-toggle btn-lg" data-toggle="dropdown" role="button" aria-expanded="false">학교소식<span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
+              <li><a href="#">학교소식</a></li> 
               <li><a href="#">뉴스</a></li> 
               <li><a href="#">이벤트</a></li> 
               <li><a href="#">학사일정</a></li> 
