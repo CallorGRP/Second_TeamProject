@@ -186,9 +186,7 @@ select{
 }
 
 .btn-default:hover,
-.btn-default:focus,
-.btn-default.focus,
-.btn-default:active,
+
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
   color: white;
@@ -204,7 +202,6 @@ select{
 
 <body>
   <!-- ------------------------------------네비게이션--------------------------------------------------------- -->
-  <!-- ------------------------------------네비게이션--------------------------------------------------------- -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header ">
@@ -215,13 +212,11 @@ select{
      </div>
      <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li> &nbsp </li>
-        
+        <li> &nbsp </li>        
         <li><a href="#" data-toggle="modal" data-target="#myModal1">대학</a></li>
         <li><a href="#" data-toggle="modal" data-target="#myModal2">Site Map</a></li>
         <li><a href="#myModal3" data-toggle="modal" ><span class="glyphicon glyphicon-log-in"></span>&nbsp&nbsp&nbspLogin</a></li>
-        <li> &nbsp </li>
-        
+        <li> &nbsp </li>        
       </ul>
     </div>
   </nav>
@@ -889,7 +884,7 @@ select{
                   <form class="navbar-form navbar-left " role="search">
                    <ul class="nav navbar-nav btn-group row" data-toggle="buttons">
 
-                     <li><button class="btn btn-default">제목</button></li>
+                     <li><button class="btn btn-default active">제목</button></li>
                      <li><button class="btn btn-default">작성자</button></li>
                      <li><button class="btn btn-default">내용</button></li>
                      <li> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
@@ -903,7 +898,9 @@ select{
                         <input type="text" class="form-control" placeholder="Search">
                       </div>
 
-                      <button type="submit  col-xs-4" class="btn btn-default">Submit</button>
+                      <button type="submit " class="btn btn-default col-xs-4">검색 &nbsp
+                      <span class="glyphicon glyphicon-search"></span>
+                      </button>
                     </div>
                   </form>
 
